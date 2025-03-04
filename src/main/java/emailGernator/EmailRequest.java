@@ -1,14 +1,15 @@
 package emailGernator;
-
 import lombok.Data;
-
-import java.util.Collection;
-
 @Data
 public class EmailRequest {
 
     private String email;
     private String tone;
+
+    public EmailRequest(String email, String tone) {
+        this.email = email;
+        this.tone = tone;
+    }
 
     public String getTone() {
         return tone;
